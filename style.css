@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    font-family: sans-serif;
+}
+body {
+    display: flex;
+    background-color: #222;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+header {
+    background-color: #111;
+    width: 100%;
+    margin-bottom: 5%;
+}
+ul {
+    display: flex;
+    flex-direction: row;
+}
+li {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+a {
+    font-size: 25px;
+    color: #fff;
+    margin: 10px 0;
+    text-decoration: none;
+}
+.subh1 {
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.subh11 {
+    font-size: 23px;
+}
+.subh12 {
+    font-size: 23px;
+}
+h1 {
+    font-size: 50px;
+    display: flex;
+    flex-direction: row;
+}
+.banderaPrincipalContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 80%;
+    margin: 5% 10%;
+}
+.banderaPrincipal {
+    flex: 1;
+}
+.banderaPrincipalDescripcion {
+    flex: 1;
+}
+.place2023 {
+    width: 90%;
+    margin: 0 5%;
+    display: flex;
+    flex-direction: column;
+}
+.place2023child {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    align-items: center; 
+    justify-content: right;
+}
+.bandera {
+    flex: 1;
+    max-width: 50%;
+}
+.subplace2023child {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+.place2023Descripcion {
+    margin-left: 20px;
+}
