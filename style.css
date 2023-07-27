@@ -36,9 +36,14 @@ li {
 
 a {
     font-size: 25px;
-    color: #fff;
+    color: #777;
     margin: 15px 0;
     text-decoration: none;
+    transition: color .5s ease-out;
+}
+
+a:hover {
+    color: #fff;
 }
 
 .subh1 {
@@ -72,8 +77,28 @@ h1 {
     margin-bottom: 250px;
 }
 
-.banderaPrincipal {
+.banderaPrincipalImage {
     flex: 1;
+    display: flex;
+    position: relative;
+}
+
+.banderaPrincipal1,
+.banderaPrincipal2 {
+    width: 100%;
+    border-radius: 10px;
+    transition: filter 1s ease;
+    border: #111 solid 2px;
+}
+
+.banderaPrincipal2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.blur-effect {
+    filter: blur(15px);
 }
 
 .banderaPrincipalDescripcion {
@@ -115,6 +140,7 @@ h1 {
     width: 100%;
     margin-bottom: 20px;
 }
+
 h2 {
     display: flex;
     justify-content: center;
@@ -125,6 +151,7 @@ h2 {
     header {
         margin-bottom: 10%;
     }
+
     h1 {
         width: 300px;
     }
@@ -141,10 +168,16 @@ h2 {
         flex: 1;
     }
 }
+
 @media (max-width: 868px) {
     header {
         margin-bottom: 15%;
     }
+
+    a {
+        color: #fff;
+    }
+
     h1 {
         width: 300px;
     }
@@ -158,10 +191,12 @@ h2 {
         flex: 1;
     }
 }
+
 @media (max-width: 450px) {
     header {
         margin-bottom: 15%;
     }
+
     h1 {
         width: 200px;
     }
@@ -175,8 +210,9 @@ h2 {
         flex: 1;
     }
 }
+
 @media (max-width: 400px) {
-        .banderaPrincipal {
+    .banderaPrincipal {
         flex: 1;
         margin-top: 100px;
     }
