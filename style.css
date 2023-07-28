@@ -34,7 +34,7 @@ li {
     align-items: center;
 }
 
-a {
+.links {
     font-size: 25px;
     color: #777;
     margin: 15px 0;
@@ -42,7 +42,7 @@ a {
     transition: color .5s ease-out;
 }
 
-a:hover {
+.links:hover {
     color: #fff;
 }
 
@@ -105,10 +105,16 @@ h1 {
     flex: 1;
 }
 
+.link {
+    color: rgb(0, 76, 255);
+    text-decoration: none;
+}
+
 .place2023 {
     width: 100%;
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
 }
 
 .place2023child {
@@ -124,6 +130,10 @@ h1 {
     max-width: 70%;
     border-radius: 10px;
     max-height: 300px;
+    transition: all .4s ease;
+}
+.bandera:hover {
+    transform: scale(1.1);
 }
 
 .final {
@@ -147,6 +157,29 @@ h2 {
     margin: auto;
 }
 
+.buttons {
+    display: flex;
+    margin-bottom: 50px;
+    gap: 10px;
+}
+button {
+    border-radius: 10px;
+    border: none;
+    background-color: #bbb;
+    transition: background-color .3s ease-out;
+}
+.button {
+    color: #000;
+    font-size: 30px;
+    text-decoration: none;
+    transition: color .3s ease-out;
+}
+.button:hover {
+    color: #fff;
+}
+button:hover {
+    background-color: #222;
+}
 @media (max-width: 1200px) {
     header {
         margin-bottom: 10%;
@@ -189,6 +222,9 @@ h2 {
 
     .banderaPrincipalDescripcion {
         flex: 1;
+    }
+    .button {
+        font-size: 20px;
     }
 }
 
